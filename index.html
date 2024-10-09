@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator app </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Password Generator</h1>
+        <div class="password-field">
+            <span class="password-display">
+                <span class="password-placeholder">P4$5W0rD!0</span>
+            </span>
+            <div class="copy-wrapper">
+                <span class="copy-text"></span>
+                <button class="copy-btn" type="button">
+                    <img src="assets/copy-btn.png" alt="" />
+                </button>
+            </div>
+        </div>
+        <form action="" class="password_setting">
+            <div class="char_length">
+                <p>Character Length</p>
+                <span class="char_count">()</span>
+            </div>
+            <input type="range" class="char_length_slider" min="1" max="30" value="15" autocomplete="off">
+
+
+            <div class="char_include_group">
+
+                <label>
+                    <input type="checkbox" id="uppercase" value="uppercase" checked >
+                    <span class="custom_checkbox"></span>
+                    <p>Include Uppercase letters</p>
+                </label>
+                <label>
+                    <input type="checkbox" id="lowercase" value="lowercase">
+                    <span class="custom_checkbox"></span>
+                    <p>Include Lowercase letters</p>
+                </label>
+                <label>
+                    <input type="checkbox" id="number" value="number">
+                    <span class="custom_checkbox"></span>
+                    <p>Include Numbers</p>
+                </label>
+                <label>
+                    <input type="checkbox" id="symbols" value="symbols">
+                    <span class="custom_checkbox"></span>
+                    <p>Include Symbols</p>
+                </label>
+            </div>
+            <div class="strength_box">
+                <span class="strength_label"> Strength</span>
+                <div class="strength_rating">
+                    <span class="strength_rating_text">Strong</span>
+                    <div class="strenght_rating_bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="generate_btn" type="submit">
+
+                <span>Generate</span>
+                <path>
+                    <img src="assets/arrow.png" alt="">
+                </path>
+            </button>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
